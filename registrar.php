@@ -1,6 +1,6 @@
 <?php
 //print_r($_POST);
-if (empty($_POST["oculto"]) || empty($_POST["txtNombres"]) || empty($_POST["txtApPaterno"]) || empty($_POST["txtApMaterno"]) || empty($_POST["txtFechaNacimiento"]) || empty($_POST["txtCelular"]) || empty($_POST["txtDni"])) {
+if (empty($_POST["oculto"]) || empty($_POST["txtNombres"]) || empty($_POST["txtApPaterno"]) || empty($_POST["txtApMaterno"]) || empty($_POST["txtFechaNacimiento"]) || empty($_POST["txtCelular"])) {
     header('Location: index.php?mensaje=falta');
     exit();
 }
