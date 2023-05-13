@@ -5,8 +5,7 @@ $nombre_bd = "railway";
 
 try {
 	$bd = new PDO (
-		'mysql://root:VgIMVOBQND3pAAtywUzJ@containers-us-west-8.railway.app:5617/railway;
-		dbname='.$nombre_bd,
+		'mysql:host=containers-us-west-8.railway.app;port=5617;dbname='.$nombre_bd,
 		$usuario,
 		$contrasena,
 		array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
