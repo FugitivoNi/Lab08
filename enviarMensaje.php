@@ -29,6 +29,5 @@ $persona = $sentencia->fetch(PDO::FETCH_OBJ);
     );
 
     $context  = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
    // header('Location: agregarPromocion.php?codigo='.$persona->id_persona);
 ?> 
